@@ -14,8 +14,8 @@ from nltk.stem import PorterStemmer
 #from sklearn.feature_extraction.text import CountVectorizer
 
 
-model = pickle.load(open('https://raw.githubusercontent.com/SpamClassifier/blob/main/spam_classifier.pkl', 'rb'))
-cv = pickle.load(open('https://raw.githubusercontent.com/SpamClassifier/blob/main/count_vect', 'rb'))
+model = pickle.load(open('https://github.com/aaryangold/SpamClassifier/blob/a3bdd292b1d770d3c212984d2662c9db8b7b8643/spam_classifier.pkl', 'rb'))
+cv = pickle.load(open('https://github.com/aaryangold/SpamClassifier/blob/a3bdd292b1d770d3c212984d2662c9db8b7b8643/count_vect', 'rb'))
 
 
 def spam_classifier(message):
