@@ -9,7 +9,7 @@ Created on Thu Apr 29 12:46:06 2021
 #Importing Dataset
 
 import pandas as pd
-messages = pd.read_csv('/Users/asaap/Downloads/spam1.csv')
+messages = pd.read_csv('spam1.csv')
 
 #Data Cleaning and Preprocessing
 
