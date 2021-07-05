@@ -51,15 +51,15 @@ y_pred = spam_model.predict(X_test)
 
 def spam_classifier(message):
     ps = PorterStemmer()
-    corpus = []
+    corpus1 = []
     review = re.sub('[^a-zA-Z]', ' ', message)
     review = review.lower()
     review = review.split()
     review = [ps.stem(word) for word in review if not word in stopwords.words('english')]
     review = ' '.join(review)
-    corpus.append(review)
+    corpus1.append(review)
     
-    X = cv.transform(corpus).toarray()
+    X = cv.transform(corpus1).toarray()
     
     prediction = spam_model.predict(X)
     if prediction==1:
