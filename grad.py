@@ -9,6 +9,8 @@ Created on Thu Apr 29 21:48:12 2021
 import gradio as gr
 import pickle
 import re
+import nltk
+nltk.download()
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 #from sklearn.feature_extraction.text import CountVectorizer
