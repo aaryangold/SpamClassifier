@@ -40,4 +40,4 @@ iface = gr.Interface(
   fn=spam_classifier, 
   inputs=gr.inputs.Textbox(lines=2, placeholder="Paste Your Message Here..."), 
   outputs="text")
-iface.launch()
+iface.launch(share=True)
